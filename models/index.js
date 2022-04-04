@@ -26,5 +26,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.tasks = require("./tasks_models")(sequelize, Sequelize);
+db.cars = require("./car_models_models")(sequelize, Sequelize);
+
 
 module.exports = db;

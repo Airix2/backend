@@ -4,16 +4,16 @@ let index = require('../controllers/tasks')
 
 const router = Router()
 
-router.get('/tasks', index.getTasks)
+router.get('/', index.getTasks)
 
-router.get('/tasks/count', index.getTaskCount)
+router.get('/count', index.getTaskCount)
 
-router.get('/tasks/:id', index.getTask)
+router.get('/:id', index.getTask)
 
-router.post('/tasks', index.createTask)
+router.post('', index.createTask)
 
-router.delete('/tasks/:id', index.deleteTask)
+router.delete('/:id', index.deleteTask)
 
-router.put('/tasks/:id', index.updateTask)
+router.put('/:id', index.updateTask)
 
 export default router

@@ -1,4 +1,5 @@
-@api = http://localhost:8080/tasks
+//@api = http://node-test.us-west-1.elasticbeanstalk.com/tasks
+@api = http://localhost:8080/cars
 
 GET {{api}}
 
@@ -10,8 +11,8 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "title": "4 task",
-    "desc": "some NEW 4 lmao"
+    "title": "third genius task",
+    "desc": "super cool third task"
 }
 
 ###

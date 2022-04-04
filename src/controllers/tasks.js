@@ -10,6 +10,7 @@ const { Op } = require("sequelize");
 
 export const getTasks = async (req, res) => {
     let tasks = await Tasks.findAll()
+    console.log('aa')
     res.json(tasks)
 }
 
